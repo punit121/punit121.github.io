@@ -23,7 +23,8 @@
     <!-- github acitivity css -->
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/octicons/2.0.2/octicons.min.css">
     <link rel="stylesheet" href="http://caseyscarborough.github.io/github-activity/github-activity-0.1.0.min.css">
-    
+    <link rel="stylesheet" href="assets/github-activity.css">
+
     <!-- Theme CSS -->  
     <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -210,8 +211,10 @@
                     <section class="github section">
                         <div class="section-inner">
                             <h2 class="heading">My GitHub</h2>
+
+
                             <p>You can embed your GitHub activities using Casey Scarborough's <a href="http://caseyscarborough.com/projects/github-activity/" target="_blank">GitHub Activity Stream</a> widget. You can also take a screenshot of your GitHub chart and put it here for fun.</p>
-                            <p><a href="#"><img class="img-responsive" src="assets/images/github-chart.png" alt="GitHub Contributions Chart" /></a></p>               
+                            <!--p><a href="#"><img class="img-responsive" src="assets/images/github-chart.png" alt="GitHub Contributions Chart" /></a></p-->               
                             <!--//Usage: http://caseyscarborough.com/projects/github-activity/ -->                       
                             <div id="ghfeed" class="ghfeed">
                             </div><!--//ghfeed-->
@@ -406,10 +409,22 @@
     <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>    
     <script type="text/javascript" src="assets/plugins/jquery-rss/dist/jquery.rss.min.js"></script> 
     <!-- github activity plugin -->
+
     <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/mustache.js/0.7.2/mustache.min.js"></script>
     <script type="text/javascript" src="http://caseyscarborough.github.io/github-activity/github-activity-0.1.0.min.js"></script>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+
+<script type="text/javascript" src="assets/github-activity.js">
     <!-- custom js -->
-    <script type="text/javascript" src="assets/js/main.js"></script>            
+    <script type="text/javascript" src="assets/js/main.js"></script>    
+    <script type="text/javascript">
+        GitHubActivity.feed({
+    username: "punit121",
+  //  repository: "your-repo", // optional
+    selector: "#ghfeed",
+    limit: 20 // optional
+});
+    </script>        
 </body>
 </html> 
 
