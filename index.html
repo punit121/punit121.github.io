@@ -6,6 +6,15 @@
   <meta name="author" content="Punit Kumar">
   <meta name="description"
         content="Punit Kumar — AI/ML Engineer at Trek Health. Building LLM systems, AI agents, and healthcare intelligence.">
+
+  <meta property="og:title" content="Punit Kumar | AI/ML Engineer">
+  <meta property="og:description"
+        content="Building LLM systems, AI agents, and healthcare intelligence.">
+  <meta property="og:image"
+        content="https://punit121.github.io/assets/images/aam.jpg">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://punit121.github.io/">
+
   <title>Punit Kumar | AI/ML Engineer</title>
 
   <style>
@@ -57,17 +66,15 @@
     }
 
     .avatar {
-      display: grid;
-      place-items: center;
-      flex: 0 0 112px;
-      width: 112px;
-      height: 112px;
-      border: 1px solid #648783;
+      display: block;
+      flex: 0 0 144px;
+      width: 144px;
+      height: 144px;
+      border: 3px solid #648783;
       border-radius: 24px;
       background: #294748;
-      color: #c5e6d5;
-      font-size: 36px;
-      font-weight: 700;
+      object-fit: cover;
+      object-position: center;
     }
 
     .eyebrow {
@@ -93,6 +100,7 @@
 
     .intro {
       max-width: 650px;
+      margin-top: 14px;
       color: #bfd0ce;
     }
 
@@ -202,12 +210,25 @@
         padding: 38px 0;
       }
 
+      .hero {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+      }
+
       .avatar {
-        display: none;
+        flex: 0 0 auto;
+        width: 112px;
+        height: 112px;
+        border-radius: 20px;
       }
 
       h1 {
         font-size: 40px;
+      }
+
+      .role {
+        font-size: 19px;
       }
 
       .container {
@@ -219,17 +240,69 @@
         padding: 24px;
       }
     }
+
+    @media print {
+      body {
+        background: #fff;
+        font-size: 11px;
+      }
+
+      header {
+        padding: 20px 0;
+        background: #fff;
+        color: #183e3c;
+      }
+
+      .role,
+      .intro,
+      nav a,
+      .eyebrow {
+        color: #344452;
+      }
+
+      .avatar {
+        width: 90px;
+        height: 90px;
+        flex-basis: 90px;
+      }
+
+      h1 {
+        font-size: 30px;
+      }
+
+      .layout {
+        grid-template-columns: 2fr 1fr;
+        gap: 16px;
+      }
+
+      .card,
+      aside .card {
+        padding: 14px;
+      }
+
+      article {
+        break-inside: avoid;
+      }
+    }
   </style>
 </head>
 
 <body>
   <header>
     <div class="container hero">
-      <div class="avatar" aria-hidden="true">PK</div>
+      <img
+        class="avatar"
+        src="assets/images/aam.jpg"
+        alt="Punit Kumar"
+        width="144"
+        height="144"
+      >
 
       <div>
         <p class="eyebrow">AI ENGINEERING · HEALTHCARE · RESEARCH</p>
+
         <h1>Punit Kumar</h1>
+
         <p class="role">AI/ML Engineer I at Trek Health</p>
 
         <p class="intro">
@@ -238,9 +311,15 @@
         </p>
 
         <nav aria-label="Profile links">
-          <a href="https://www.linkedin.com/in/punit121/">LinkedIn ↗</a>
-          <a href="https://github.com/punit121/">GitHub ↗</a>
-          <a href="mailto:punit.kumar1661@gmail.com">Contact me ↗</a>
+          <a href="https://www.linkedin.com/in/punit121/">
+            LinkedIn ↗
+          </a>
+          <a href="https://github.com/punit121/">
+            GitHub ↗
+          </a>
+          <a href="mailto:punit.kumar1661@gmail.com">
+            Contact me ↗
+          </a>
         </nav>
       </div>
     </div>
@@ -338,7 +417,9 @@
               Developed chat fraud detection and personalized
               recommendation systems.
             </li>
-            <li>Built an image spam detection module using Django.</li>
+            <li>
+              Built an image spam detection module using Django.
+            </li>
             <li>
               Developed an XGBoost loan prediction model and deployed
               it on Amazon SageMaker.
@@ -434,19 +515,24 @@
           efficient machine learning. Explore my code or connect to
           discuss engineering and research.
         </p>
-        <a href="https://github.com/punit121/">Explore GitHub ↗</a>
+        <a href="https://github.com/punit121/">
+          Explore GitHub ↗
+        </a>
       </section>
     </div>
 
     <aside aria-label="Profile details">
       <section class="card">
         <h2>Contact</h2>
+
         <p>United States</p>
+
         <p>
           <a href="mailto:punit.kumar1661@gmail.com">
             punit.kumar1661@gmail.com
           </a>
         </p>
+
         <p>
           <a href="https://punit121.github.io/">
             punit121.github.io ↗
@@ -496,7 +582,9 @@
           <p>
             B.Tech + M.Tech, Agricultural &amp; Food Engineering
           </p>
-         
+          <p>
+            M.Tech specialization: Food Processing Engineering
+          </p>
         </article>
       </section>
 
